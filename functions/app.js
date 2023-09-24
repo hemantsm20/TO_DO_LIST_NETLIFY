@@ -125,7 +125,7 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-app.use('/.netlify/functions/api',router);
+app.use('/.netlify/functions/app',router);
 module.exports.handler=serverless(app);
 
 
